@@ -1,0 +1,46 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: gateway-server
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: spike_routh1
+          uri: lb://order-server
+          predicates:
+          - Path=/order-server/**
+        - id: spike_routh2
+          uri: lb://stock-server
+          predicates:
+          - Path=/stock-server/**
+        - id: spike_routh3
+          uri: lb://storage-server
+          predicates:
+          - Path=/storage-server/**
+        - id: spike_routh4
+          uri: lb://time-server
+          predicates:
+          - Path=/time-server/**
+        - id: spike_routh5
+          uri: lb://user-server
+          predicates:
+          - Path=/user-server/**
+        - id: spike_routh6
+          uri: lb://spike-client
+          predicates:
+            - Path=/spike-client/**
+eureka:
+  instance:
+    hostname: localhost
+    port: 8001
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+      fetch-registry: true
+
