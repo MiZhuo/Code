@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="fun.mizhuo.hrserver.mapper.DepartmentMapper">
+  <resultMap id="BaseResultMap" type="fun.mizhuo.hrserver.model.Department">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="parentId" jdbcType="INTEGER" property="parentId" />
+    <result column="depPath" jdbcType="VARCHAR" property="depPath" />
+    <result column="enabled" jdbcType="BIT" property="enabled" />
+    <result column="isParent" jdbcType="BIT" property="isParent" />
+  </resultMap>
+
+  <resultMap id="deptTreeMap" type="fun.mizhuo.hrserver.model.Department" extends="BaseResultMap">
+    <collection property="children" ofType="fun.mizhuo.hrserver.model.Department"
+                select="getDeptTree" column="id"></collection>
+  </resultMap>
+
+  <select id="getDeptTree" resultMap="deptTreeMap">
+    select * from department where parentId = #{parentId}
+  </select>
+
+  <select id="addDept" parameterType="fun.mizhuo.hrserver.model.Department" statementType="CALLABLE">
+    call addDep(#{name,mode=IN,jdbcType=VARCHAR},#{parentId,mode=IN,jdbcType=INTEGER},
+        #{enabled,mode=IN,jdbcType=BOOLEAN},#{result,mode=OUT,jdbcType=INTEGER},
+        #{id,mode=OUT,jdbcType=INTEGER})
+  </select>
+
+  <select id="deleteDept" parameterType="fun.mizhuo.hrserver.model.Department" statementType="CALLABLE">
+    call deleteDep(#{id,mode=IN,jdbcType=INTEGER},#{result,mode=OUT,jdbcType=INTEGER})
+  </select>
+
+</mapper>

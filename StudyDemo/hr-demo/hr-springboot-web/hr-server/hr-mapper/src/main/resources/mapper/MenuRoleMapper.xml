@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="fun.mizhuo.hrserver.mapper.MenuRoleMapper">
+  <resultMap id="BaseResultMap" type="fun.mizhuo.hrserver.model.MenuRole">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="mid" jdbcType="INTEGER" property="mid" />
+    <result column="rid" jdbcType="INTEGER" property="rid" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, mid, rid
+  </sql>
+
+  <select id="getMenuIdsByRoleId" resultType="int">
+    select
+      mid
+    from menu_role
+    where rid = #{id,jdbcType=INTEGER}
+  </select>
+
+  <delete id="deleteMenuByRoleId" parameterType="java.lang.Integer">
+    delete from menu_role
+    where rid = #{roleId,jdbcType=INTEGER}
+  </delete>
+
+  <insert id="insertMenuWithRoleId" parameterType="map">
+    insert into menu_role(mid,rid)
+    values
+    <foreach collection="menuIds" item="mid" separator=",">
+      (#{mid},#{roleId})
+    </foreach>
+  </insert>
+</mapper>

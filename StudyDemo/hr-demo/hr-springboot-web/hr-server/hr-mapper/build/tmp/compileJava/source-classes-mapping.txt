@@ -1,0 +1,51 @@
+fun/mizhuo/hrserver/mapper/MailSendLogMapper.java
+ fun.mizhuo.hrserver.mapper.MailSendLogMapper
+fun/mizhuo/hrserver/mapper/NationMapper.java
+ fun.mizhuo.hrserver.mapper.NationMapper
+fun/mizhuo/hrserver/mapper/RoleMapper.java
+ fun.mizhuo.hrserver.mapper.RoleMapper
+fun/mizhuo/hrserver/mapper/JobLevelMapper.java
+ fun.mizhuo.hrserver.mapper.JobLevelMapper
+fun/mizhuo/hrserver/util/Status.java
+ fun.mizhuo.hrserver.util.Status
+ fun.mizhuo.hrserver.util.Status$ExpireEnum
+fun/mizhuo/hrserver/mapper/MenuRoleMapper.java
+ fun.mizhuo.hrserver.mapper.MenuRoleMapper
+fun/mizhuo/hrserver/mapper/AdjustSalaryMapper.java
+ fun.mizhuo.hrserver.mapper.AdjustSalaryMapper
+fun/mizhuo/hrserver/mapper/EmployeeTrainMapper.java
+ fun.mizhuo.hrserver.mapper.EmployeeTrainMapper
+fun/mizhuo/hrserver/mapper/EmployeeMapper.java
+ fun.mizhuo.hrserver.mapper.EmployeeMapper
+fun/mizhuo/hrserver/config/RedisConfig.java
+ fun.mizhuo.hrserver.config.RedisConfig
+fun/mizhuo/hrserver/mapper/OpLogMapper.java
+ fun.mizhuo.hrserver.mapper.OpLogMapper
+fun/mizhuo/hrserver/util/RedisUtils.java
+ fun.mizhuo.hrserver.util.RedisUtils
+fun/mizhuo/hrserver/mapper/EmployeeRemoveMapper.java
+ fun.mizhuo.hrserver.mapper.EmployeeRemoveMapper
+fun/mizhuo/hrserver/mapper/SysMsgMapper.java
+ fun.mizhuo.hrserver.mapper.SysMsgMapper
+fun/mizhuo/hrserver/mapper/SalaryMapper.java
+ fun.mizhuo.hrserver.mapper.SalaryMapper
+fun/mizhuo/hrserver/mapper/EmployeeEcMapper.java
+ fun.mizhuo.hrserver.mapper.EmployeeEcMapper
+fun/mizhuo/hrserver/mapper/EmpSalaryMapper.java
+ fun.mizhuo.hrserver.mapper.EmpSalaryMapper
+fun/mizhuo/hrserver/mapper/PositionMapper.java
+ fun.mizhuo.hrserver.mapper.PositionMapper
+fun/mizhuo/hrserver/mapper/HrRoleMapper.java
+ fun.mizhuo.hrserver.mapper.HrRoleMapper
+fun/mizhuo/hrserver/mapper/HrMapper.java
+ fun.mizhuo.hrserver.mapper.HrMapper
+fun/mizhuo/hrserver/mapper/MenuMapper.java
+ fun.mizhuo.hrserver.mapper.MenuMapper
+fun/mizhuo/hrserver/mapper/AppraiseMapper.java
+ fun.mizhuo.hrserver.mapper.AppraiseMapper
+fun/mizhuo/hrserver/mapper/DepartmentMapper.java
+ fun.mizhuo.hrserver.mapper.DepartmentMapper
+fun/mizhuo/hrserver/mapper/CommonMapper.java
+ fun.mizhuo.hrserver.mapper.CommonMapper
+fun/mizhuo/hrserver/mapper/PoliticsStatusMapper.java
+ fun.mizhuo.hrserver.mapper.PoliticsStatusMapper

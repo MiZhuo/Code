@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="fun.mizhuo.hrserver.mapper.MenuMapper">
+  <resultMap id="BaseResultMap" type="fun.mizhuo.hrserver.model.Menu">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="path" jdbcType="VARCHAR" property="path" />
+    <result column="component" jdbcType="VARCHAR" property="component" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="iconCls" jdbcType="VARCHAR" property="iconCls" />
+    <result column="parentId" jdbcType="INTEGER" property="parentId" />
+    <result column="enabled" jdbcType="BIT" property="enabled" />
+    <association property="meta" javaType="fun.mizhuo.hrserver.model.Meta">
+      <result column="keepAlive" jdbcType="BIT" property="keepAlive" />
+      <result column="requireAuth" jdbcType="BIT" property="requireAuth" />
+    </association>
+  </resultMap>
+
+  <resultMap id="MenuMap" type="fun.mizhuo.hrserver.model.Menu" extends="BaseResultMap">
+    <collection property="children" ofType="fun.mizhuo.hrserver.model.Menu">
+      <id column="id2" jdbcType="INTEGER" property="id" />
+      <result column="url2" jdbcType="VARCHAR" property="url" />
+      <result column="path2" jdbcType="VARCHAR" property="path" />
+      <result column="component2" jdbcType="VARCHAR" property="component" />
+      <result column="name2" jdbcType="VARCHAR" property="name" />
+      <result column="iconCls2" jdbcType="VARCHAR" property="iconCls" />
+      <result column="parentId2" jdbcType="INTEGER" property="parentId" />
+      <result column="enabled2" jdbcType="BIT" property="enabled" />
+      <association property="meta" javaType="fun.mizhuo.hrserver.model.Meta">
+        <result column="keepAlive2" jdbcType="BIT" property="keepAlive" />
+        <result column="requireAuth2" jdbcType="BIT" property="requireAuth" />
+      </association>
+    </collection>
+  </resultMap>
+
+  <select id="initMenuByUserId" resultMap="MenuMap">
+        SELECT
+          DISTINCT
+          E.*,
+          D.id as id2,
+          D.URL AS url2,
+          d.path as path2,
+          d.component as component2,
+          d.name as name2,
+          d.iconCls as iconCls2,
+          d.parentId as parentId2,
+          d.enabled as enabled2,
+          d.keepAlive as keepAlive2,
+          d.requireAuth as requireAuth2
+      FROM
+          HR A
+      LEFT JOIN HR_ROLE B ON A.ID = B.HRID
+      LEFT JOIN MENU_ROLE C ON B.RID = C.RID
+      LEFT JOIN MENU D ON C.MID = D.ID
+      LEFT JOIN MENU E ON D.PARENTID = E.ID
+      WHERE
+          A.ID = #{id}
+          AND D.ENABLED = TRUE
+          AND E.ENABLED = TRUE
+  </select>
+
+  <resultMap id="MenuMapWithRole" type="fun.mizhuo.hrserver.model.Menu" extends="BaseResultMap">
+       <collection property="roles" ofType="fun.mizhuo.hrserver.model.Role">
+            <id column="rid" property="id"></id>
+            <result column="rname" property="name"/>
+            <result column="rnameZh" property="nameZh"/>
+        </collection>
+  </resultMap>
+
+  <select id="getMenuWithRole" resultMap="MenuMapWithRole">
+      SELECT
+          A.*,
+          B.id AS RID,
+          C.`name` AS "rname",
+          C.nameZh AS "rnameZh"
+      FROM
+        menu A
+      LEFT JOIN menu_role B ON A.ID = B.MID
+      LEFT JOIN ROLE C ON B.RID = C.ID
+      WHERE
+          A.enabled = '1'
+          AND parentId &lt;&gt; '1'
+          AND parentId IS NOT NULL
+  </select>
+
+  <resultMap id="MenuTree" type="fun.mizhuo.hrserver.model.Menu" extends="BaseResultMap">
+      <id column="id1" property="id"></id>
+      <result column="name1" property="name"/>
+      <collection property="children" ofType="fun.mizhuo.hrserver.model.Menu">
+          <id column="id2" property="id"></id>
+          <result column="name2" property="name"></result>
+          <collection property="children" ofType="fun.mizhuo.hrserver.model.Menu">
+              <id column="id3" property="id"></id>
+              <result column="name3" property="name"></result>
+          </collection>
+      </collection>
+  </resultMap>
+
+  <select id="getMenuTree" resultMap="MenuTree">
+    SELECT
+        m1.id AS id1,
+        m1.NAME AS name1,
+        m2.id AS id2,
+        m2.NAME AS name2,
+        m3.id AS id3,
+        m3.NAME AS name3
+    FROM
+        menu m1
+        LEFT JOIN menu m2 ON m1.id = m2.parentId
+        LEFT JOIN menu m3 ON m2.id = m3.parentId
+    WHERE
+        m3.enabled = TRUE
+    ORDER BY m1.id,m2.id,m3.id
+  </select>
+
+</mapper>

@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+group 'fun.mizhuo'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile project(":hr-commons")
+}

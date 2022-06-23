@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -dynamiclib -Wl,-headerpad_max_install_names  -o libc_project.dylib -install_name @rpath/libc_project.dylib CMakeFiles/c_project.dir/com_example_demo_NativeTest.cpp.o 

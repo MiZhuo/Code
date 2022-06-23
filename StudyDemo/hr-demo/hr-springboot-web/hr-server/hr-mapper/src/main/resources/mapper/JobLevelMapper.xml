@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="fun.mizhuo.hrserver.mapper.JobLevelMapper">
+  <resultMap id="BaseResultMap" type="fun.mizhuo.hrserver.model.JobLevel">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="titleLevel" jdbcType="CHAR" property="titleLevel" />
+    <result column="createDate" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="enabled" jdbcType="BIT" property="enabled" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, name, titleLevel, createDate, enabled
+  </sql>
+
+  <select id="getAllJobTitle" resultMap="BaseResultMap">
+    select * from joblevel
+  </select>
+  <insert id="addJobTitle" parameterType="fun.mizhuo.hrserver.model.JobLevel">
+    insert into joblevel
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="name != null">
+        name,
+      </if>
+      <if test="titleLevel != null">
+        titleLevel,
+      </if>
+        createDate,
+        enabled,
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="titleLevel != null">
+        #{titleLevel,jdbcType=CHAR},
+      </if>
+      current_timestamp ,
+      '1'
+    </trim>
+  </insert>
+  <update id="updateJobTitle" parameterType="fun.mizhuo.hrserver.model.JobLevel">
+    update joblevel
+    <set>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="titleLevel != null">
+        titleLevel = #{titleLevel,jdbcType=CHAR},
+      </if>
+      <if test="enabled != null">
+        enabled = #{enabled,jdbcType=BIT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <delete id="deleteJobTitle">
+    delete from joblevel
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+
+  <delete id="deleteMoreJobTitle" parameterType="list">
+    delete from joblevel where id in
+    <foreach collection="list" item="jobLevel" open="(" close=")" separator=",">
+      #{jobLevel.id}
+    </foreach>
+  </delete>
+
+</mapper>

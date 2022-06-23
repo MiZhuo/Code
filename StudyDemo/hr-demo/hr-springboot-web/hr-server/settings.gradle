@@ -1,0 +1,8 @@
+rootProject.name = 'hr-server'
+include 'hr-commons'
+include 'hr-mapper'
+include 'hr-model'
+include 'hr-service'
+include 'hr-web'
+include 'mail-server'
+

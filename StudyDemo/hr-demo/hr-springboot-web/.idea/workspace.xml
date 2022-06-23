@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="33621892-1788-4228-bc7d-3b4e284c3d72" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../hr-client/dist-production/css/app.675b1999.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hr-client/dist-production/css/chunk-2c8c0c86.b7e82521.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hr-client/dist-production/css/chunk-94288bfa.9009a43a.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hr-client/dist-production/css/chunk-vendors.174c19d7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hr-client/dist-production/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hr-client/dist-production/fonts/element-icons.535877f5.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hr-client/dist-production/fonts/element-icons.732389de.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hr-client/dist-production/fonts/fontawesome-webfont.674f50d2.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hr-client/dist-production/fonts/fontawesome-webfont.af7ae505.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hr-client/dist-production/fonts/fontawesome-webfont.b06871f2.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hr-client/dist-production/fonts/fontawesome-webfont.fee66e71.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hr-client/dist-production/img/fontawesome-webfont.912ec66d.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hr-client/dist-production/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hr-client/dist-production/js/app.4eba80b0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hr-client/dist-production/js/app.4eba80b0.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hr-client/dist-production/js/chunk-2c8c0c86.f998f402.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hr-client/dist-production/js/chunk-2c8c0c86.f998f402.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hr-client/dist-production/js/chunk-94288bfa.e95053b0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hr-client/dist-production/js/chunk-94288bfa.e95053b0.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hr-client/dist-production/js/chunk-vendors.5c25ccae.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hr-client/dist-production/js/chunk-vendors.5c25ccae.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr-client/.env.dev" beforeDir="false" afterPath="$PROJECT_DIR$/../hr-client/.env.dev" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr-client/.env.prod" beforeDir="false" afterPath="$PROJECT_DIR$/../hr-client/.env.prod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../hr-client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr-client/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../hr-client/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/.gradle/6.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/.gradle/6.6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/.gradle/6.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/.gradle/6.6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/.gradle/6.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/.gradle/6.6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/.gradle/6.6.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/.gradle/6.6.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/.gradle/6.6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/.gradle/6.6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/.gradle/6.6.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/.gradle/6.6.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/.gradle/6.6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/.gradle/6.6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/.gradle/6.6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/.gradle/6.6.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-commons/build/classes/java/main/fun/mizhuo/hrserver/exception/HrException.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-commons/build/classes/java/main/fun/mizhuo/hrserver/exception/HrException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-commons/build/classes/java/main/fun/mizhuo/hrserver/util/MapUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-commons/build/classes/java/main/fun/mizhuo/hrserver/util/MapUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-commons/build/classes/java/main/fun/mizhuo/hrserver/util/PoiUtils$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-commons/build/classes/java/main/fun/mizhuo/hrserver/util/PoiUtils$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-commons/build/classes/java/main/fun/mizhuo/hrserver/util/PoiUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-commons/build/classes/java/main/fun/mizhuo/hrserver/util/PoiUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-commons/build/libs/hr-commons-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-commons/build/libs/hr-commons-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-mapper/build/classes/java/main/fun/mizhuo/hrserver/util/RedisUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-mapper/build/classes/java/main/fun/mizhuo/hrserver/util/RedisUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-mapper/build/libs/hr-mapper-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-mapper/build/libs/hr-mapper-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-mapper/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-mapper/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-model/build/classes/java/main/fun/mizhuo/hrserver/model/Hr.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-model/build/classes/java/main/fun/mizhuo/hrserver/model/Hr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-model/build/classes/java/main/fun/mizhuo/hrserver/model/JobLevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-model/build/classes/java/main/fun/mizhuo/hrserver/model/JobLevel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-model/build/classes/java/main/fun/mizhuo/hrserver/model/Nation.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-model/build/classes/java/main/fun/mizhuo/hrserver/model/Nation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-model/build/classes/java/main/fun/mizhuo/hrserver/model/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-model/build/classes/java/main/fun/mizhuo/hrserver/model/Position.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-model/build/classes/java/main/fun/mizhuo/hrserver/model/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-model/build/classes/java/main/fun/mizhuo/hrserver/model/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-model/build/libs/hr-model-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-model/build/libs/hr-model-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-model/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-model/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-service/build/classes/java/main/fun/mizhuo/hrserver/service/impl/common/MenuRoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-service/build/classes/java/main/fun/mizhuo/hrserver/service/impl/common/MenuRoleServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-service/build/classes/java/main/fun/mizhuo/hrserver/service/impl/common/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-service/build/classes/java/main/fun/mizhuo/hrserver/service/impl/common/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-service/build/classes/java/main/fun/mizhuo/hrserver/service/impl/employee/basic/EmployeeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-service/build/classes/java/main/fun/mizhuo/hrserver/service/impl/employee/basic/EmployeeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-service/build/classes/java/main/fun/mizhuo/hrserver/service/impl/salary/EmpSalaryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-service/build/classes/java/main/fun/mizhuo/hrserver/service/impl/salary/EmpSalaryServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-service/build/classes/java/main/fun/mizhuo/hrserver/service/impl/salary/SalarySobServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-service/build/classes/java/main/fun/mizhuo/hrserver/service/impl/salary/SalarySobServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-service/build/classes/java/main/fun/mizhuo/hrserver/service/impl/system/basic/RoleTeamServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-service/build/classes/java/main/fun/mizhuo/hrserver/service/impl/system/basic/RoleTeamServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-service/build/libs/hr-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-service/build/libs/hr-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-service/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-service/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/config/CustomUrlDecisionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/config/CustomUrlDecisionManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/config/RoleFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/config/RoleFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/config/SecurityConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/config/SecurityConfig$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/config/SecurityConfig$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/config/SecurityConfig$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/config/VerifyCaptchaFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/config/VerifyCaptchaFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/controller/common/CommonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/controller/common/CommonController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/controller/common/LoginController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/controller/common/LoginController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/controller/common/WsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/controller/common/WsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/controller/employee/basic/EmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/controller/employee/basic/EmployeeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/controller/system/basic/DeptController.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/controller/system/basic/DeptController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/controller/system/basic/JobTitleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/controller/system/basic/JobTitleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/controller/system/basic/PositionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/controller/system/basic/PositionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/controller/system/hr/HrController.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/controller/system/hr/HrController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/enums/NoneRoleURLEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/enums/NoneRoleURLEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/filter/MyAuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-web/build/classes/java/main/fun/mizhuo/hrserver/filter/MyAuthenticationFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-web/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-web/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-web/out/production/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-web/out/production/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-server/hr-web/src/main/java/fun/mizhuo/hrserver/controller/common/WsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hr-server/hr-web/src/main/java/fun/mizhuo/hrserver/controller/common/WsController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/../hr-server/mail-server">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/hr-server">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/mail-server">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/mail-server">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/mail-server/hr-commons">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/mail-server/hr-server">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/hr-server">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/mail-server/hr-server/hr-commons">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/hr-server/hr-model">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/hr-server/hr-service">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/mail-server/hr-model">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/hr-server/hr-commons">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/hr-server/hr-web">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/hr-server/mail-server">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hr-server" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hr-server" type="f1a62948:ProjectNode" />
+                <item name="hr-web" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hr-server" type="f1a62948:ProjectNode" />
+                <item name="hr-web" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hr-server" type="f1a62948:ProjectNode" />
+                <item name="hr-web" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1j5dGVcFj5lFXvnHxAtG3pBX2yV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/hr-server/hr-web/src/main/resources/application-prod.yml" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/hr-server/hr-web/src/main/resources" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.3264368" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/hr-server" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/hr-server/hr-web/src/main/resources" />
+      <recent name="$PROJECT_DIR$/mail-server/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle install" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.hr-server:hr-web [bootJar]">
+    <configuration name="hr-server:hr-web [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/hr-server/hr-web" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="hr-server:hr-web [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/hr-server/hr-web" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="hr-server:hr-web [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/hr-server/hr-web" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="hr-server:hr-web [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/hr-server/hr-web" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="hr-springboot-web [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="HrserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="hr-server.hr-web.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fun.mizhuo.hrserver.HrserverApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MailServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="hr-server.mail-server.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fun.mizhuo.mailserver.MailServerApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.hr-springboot-web [jar]" />
+      <item itemvalue="Gradle.hr-server:hr-web [jar]" />
+      <item itemvalue="Gradle.hr-server:hr-web [build]" />
+      <item itemvalue="Gradle.hr-server:hr-web [bootJar]" />
+      <item itemvalue="Gradle.hr-server:hr-web [clean]" />
+      <item itemvalue="Spring Boot.HrserverApplication" />
+      <item itemvalue="Spring Boot.MailServerApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.hr-server:hr-web [clean]" />
+        <item itemvalue="Gradle.hr-server:hr-web [bootJar]" />
+        <item itemvalue="Gradle.hr-server:hr-web [build]" />
+        <item itemvalue="Gradle.hr-server:hr-web [jar]" />
+        <item itemvalue="Gradle.hr-springboot-web [jar]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="33621892-1788-4228-bc7d-3b4e284c3d72" name="Default Changelist" comment="" />
+      <created>1603097790207</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603097790207</updated>
+      <workItem from="1603097796065" duration="1609000" />
+      <workItem from="1603100911394" duration="589000" />
+      <workItem from="1603101525432" duration="252000" />
+      <workItem from="1603112446644" duration="6577000" />
+      <workItem from="1603186658999" duration="961000" />
+      <workItem from="1603190279321" duration="8103000" />
+      <workItem from="1603281567565" duration="5308000" />
+      <workItem from="1603364149029" duration="6877000" />
+      <workItem from="1603519529946" duration="2470000" />
+      <workItem from="1603594468469" duration="7048000" />
+      <workItem from="1603717737070" duration="211000" />
+      <workItem from="1603805249910" duration="1065000" />
+      <workItem from="1603886873724" duration="753000" />
+      <workItem from="1603932611509" duration="917000" />
+      <workItem from="1603958768871" duration="282000" />
+      <workItem from="1604116521572" duration="2319000" />
+      <workItem from="1604213331296" duration="5929000" />
+      <workItem from="1604321500863" duration="5746000" />
+      <workItem from="1604403470715" duration="2912000" />
+      <workItem from="1604476454869" duration="1508000" />
+      <workItem from="1604558637260" duration="502000" />
+      <workItem from="1604582291583" duration="414000" />
+      <workItem from="1604587103486" duration="462000" />
+      <workItem from="1604587648118" duration="102000" />
+      <workItem from="1604730658422" duration="399000" />
+      <workItem from="1604731125634" duration="223000" />
+      <workItem from="1604801407159" duration="931000" />
+      <workItem from="1604904246654" duration="126000" />
+      <workItem from="1604904555849" duration="314000" />
+      <workItem from="1604932104991" duration="425000" />
+      <workItem from="1604972309367" duration="179000" />
+      <workItem from="1605078179430" duration="340000" />
+      <workItem from="1605088975717" duration="621000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="295" y="52" width="750" height="825" key="#MailServerApplication" timestamp="1603282233816">
+      <screen x="0" y="0" width="1340" height="894" />
+    </state>
+    <state x="295" y="52" width="750" height="825" key="#MailServerApplication/0.0.1340.894@0.0.1340.894" timestamp="1603282233816" />
+    <state x="158" y="28" key="#Project_Structure" timestamp="1603596201581">
+      <screen x="0" y="0" width="1340" height="894" />
+    </state>
+    <state x="158" y="28" key="#Project_Structure/0.0.1340.894@0.0.1340.894" timestamp="1603596201581" />
+    <state x="134" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603282307873">
+      <screen x="0" y="0" width="1340" height="894" />
+    </state>
+    <state x="134" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1340.894@0.0.1340.894" timestamp="1603282307873" />
+    <state x="461" y="150" key="#com.intellij.ide.util.MemberChooser" timestamp="1604324896120">
+      <screen x="0" y="0" width="1280" height="854" />
+    </state>
+    <state x="461" y="150" key="#com.intellij.ide.util.MemberChooser/0.0.1280.854@0.0.1280.854" timestamp="1604324896120" />
+    <state x="483" y="157" key="#com.intellij.ide.util.MemberChooser/0.0.1340.894@0.0.1340.894" timestamp="1603613880347" />
+    <state x="287" y="104" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1603114517496">
+      <screen x="0" y="0" width="1340" height="894" />
+    </state>
+    <state x="287" y="104" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1340.894@0.0.1340.894" timestamp="1603114517496" />
+    <state x="408" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603100724933">
+      <screen x="0" y="0" width="1340" height="894" />
+    </state>
+    <state x="408" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1340.894@0.0.1340.894" timestamp="1603100724933" />
+    <state x="378" y="181" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1604404597733">
+      <screen x="0" y="0" width="1280" height="854" />
+    </state>
+    <state x="378" y="181" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1280.854@0.0.1280.854" timestamp="1604404597733" />
+    <state width="480" height="602" key="DebuggerActiveHint" timestamp="1604408113947">
+      <screen x="0" y="0" width="1280" height="854" />
+    </state>
+    <state width="480" height="602" key="DebuggerActiveHint/0.0.1280.854@0.0.1280.854" timestamp="1604408113947" />
+    <state width="482" height="630" key="DebuggerActiveHint/0.0.1340.894@0.0.1340.894" timestamp="1603612522621" />
+    <state width="448" height="630" key="DebuggerActiveHint/0.23.1340.821@0.23.1340.821" timestamp="1603374922915" />
+    <state width="1238" height="224" key="GridCell.Tab.0.bottom" timestamp="1604810601480">
+      <screen x="0" y="0" width="1280" height="854" />
+    </state>
+    <state width="1238" height="224" key="GridCell.Tab.0.bottom/0.0.1280.854@0.0.1280.854" timestamp="1604810601480" />
+    <state width="1086" height="294" key="GridCell.Tab.0.bottom/0.0.1340.894@0.0.1340.894" timestamp="1603630117852" />
+    <state width="1035" height="247" key="GridCell.Tab.0.bottom/0.23.1280.782@0.23.1280.782" timestamp="1604730694325" />
+    <state width="1086" height="294" key="GridCell.Tab.0.bottom/0.23.1340.821@0.23.1340.821" timestamp="1603594894406" />
+    <state width="1238" height="224" key="GridCell.Tab.0.center" timestamp="1604810601479">
+      <screen x="0" y="0" width="1280" height="854" />
+    </state>
+    <state width="1238" height="224" key="GridCell.Tab.0.center/0.0.1280.854@0.0.1280.854" timestamp="1604810601479" />
+    <state width="1086" height="294" key="GridCell.Tab.0.center/0.0.1340.894@0.0.1340.894" timestamp="1603630117851" />
+    <state width="1035" height="247" key="GridCell.Tab.0.center/0.23.1280.782@0.23.1280.782" timestamp="1604730694324" />
+    <state width="1086" height="294" key="GridCell.Tab.0.center/0.23.1340.821@0.23.1340.821" timestamp="1603594894400" />
+    <state width="1238" height="224" key="GridCell.Tab.0.left" timestamp="1604810601478">
+      <screen x="0" y="0" width="1280" height="854" />
+    </state>
+    <state width="1238" height="224" key="GridCell.Tab.0.left/0.0.1280.854@0.0.1280.854" timestamp="1604810601478" />
+    <state width="1086" height="294" key="GridCell.Tab.0.left/0.0.1340.894@0.0.1340.894" timestamp="1603630117850" />
+    <state width="1035" height="247" key="GridCell.Tab.0.left/0.23.1280.782@0.23.1280.782" timestamp="1604730694322" />
+    <state width="1086" height="294" key="GridCell.Tab.0.left/0.23.1340.821@0.23.1340.821" timestamp="1603594894397" />
+    <state width="1238" height="224" key="GridCell.Tab.0.right" timestamp="1604810601479">
+      <screen x="0" y="0" width="1280" height="854" />
+    </state>
+    <state width="1238" height="224" key="GridCell.Tab.0.right/0.0.1280.854@0.0.1280.854" timestamp="1604810601479" />
+    <state width="1086" height="294" key="GridCell.Tab.0.right/0.0.1340.894@0.0.1340.894" timestamp="1603630117852" />
+    <state width="1035" height="247" key="GridCell.Tab.0.right/0.23.1280.782@0.23.1280.782" timestamp="1604730694325" />
+    <state width="1086" height="294" key="GridCell.Tab.0.right/0.23.1340.821@0.23.1340.821" timestamp="1603594894404" />
+    <state width="1035" height="247" key="GridCell.Tab.1.bottom" timestamp="1604731103731">
+      <screen x="0" y="0" width="1280" height="854" />
+    </state>
+    <state width="1035" height="247" key="GridCell.Tab.1.bottom/0.0.1280.854@0.0.1280.854" timestamp="1604731103731" />
+    <state width="1086" height="294" key="GridCell.Tab.1.bottom/0.0.1340.894@0.0.1340.894" timestamp="1603630117854" />
+    <state width="1035" height="254" key="GridCell.Tab.1.bottom/0.23.1280.782@0.23.1280.782" timestamp="1604408483522" />
+    <state width="1086" height="294" key="GridCell.Tab.1.bottom/0.23.1340.821@0.23.1340.821" timestamp="1603614350874" />
+    <state width="1035" height="247" key="GridCell.Tab.1.center" timestamp="1604731103730">
+      <screen x="0" y="0" width="1280" height="854" />
+    </state>
+    <state width="1035" height="247" key="GridCell.Tab.1.center/0.0.1280.854@0.0.1280.854" timestamp="1604731103730" />
+    <state width="1086" height="294" key="GridCell.Tab.1.center/0.0.1340.894@0.0.1340.894" timestamp="1603630117853" />
+    <state width="1035" height="254" key="GridCell.Tab.1.center/0.23.1280.782@0.23.1280.782" timestamp="1604408483521" />
+    <state width="1086" height="294" key="GridCell.Tab.1.center/0.23.1340.821@0.23.1340.821" timestamp="1603614350873" />
+    <state width="1035" height="247" key="GridCell.Tab.1.left" timestamp="1604731103729">
+      <screen x="0" y="0" width="1280" height="854" />
+    </state>
+    <state width="1035" height="247" key="GridCell.Tab.1.left/0.0.1280.854@0.0.1280.854" timestamp="1604731103729" />
+    <state width="1086" height="294" key="GridCell.Tab.1.left/0.0.1340.894@0.0.1340.894" timestamp="1603630117853" />
+    <state width="1035" height="254" key="GridCell.Tab.1.left/0.23.1280.782@0.23.1280.782" timestamp="1604408483521" />
+    <state width="1086" height="294" key="GridCell.Tab.1.left/0.23.1340.821@0.23.1340.821" timestamp="1603614350872" />
+    <state width="1035" height="247" key="GridCell.Tab.1.right" timestamp="1604731103731">
+      <screen x="0" y="0" width="1280" height="854" />
+    </state>
+    <state width="1035" height="247" key="GridCell.Tab.1.right/0.0.1280.854@0.0.1280.854" timestamp="1604731103731" />
+    <state width="1086" height="294" key="GridCell.Tab.1.right/0.0.1340.894@0.0.1340.894" timestamp="1603630117854" />
+    <state width="1035" height="254" key="GridCell.Tab.1.right/0.23.1280.782@0.23.1280.782" timestamp="1604408483522" />
+    <state width="1086" height="294" key="GridCell.Tab.1.right/0.23.1340.821@0.23.1340.821" timestamp="1603614350873" />
+    <state width="1035" height="247" key="GridCell.Tab.2.bottom" timestamp="1604731103733">
+      <screen x="0" y="0" width="1280" height="854" />
+    </state>
+    <state width="1035" height="247" key="GridCell.Tab.2.bottom/0.0.1280.854@0.0.1280.854" timestamp="1604731103733" />
+    <state width="1086" height="294" key="GridCell.Tab.2.bottom/0.0.1340.894@0.0.1340.894" timestamp="1603630117856" />
+    <state width="1035" height="254" key="GridCell.Tab.2.bottom/0.23.1280.782@0.23.1280.782" timestamp="1604329340544" />
+    <state width="1035" height="247" key="GridCell.Tab.2.center" timestamp="1604731103732">
+      <screen x="0" y="0" width="1280" height="854" />
+    </state>
+    <state width="1035" height="247" key="GridCell.Tab.2.center/0.0.1280.854@0.0.1280.854" timestamp="1604731103732" />
+    <state width="1086" height="294" key="GridCell.Tab.2.center/0.0.1340.894@0.0.1340.894" timestamp="1603630117855" />
+    <state width="1035" height="254" key="GridCell.Tab.2.center/0.23.1280.782@0.23.1280.782" timestamp="1604329340541" />
+    <state width="1035" height="247" key="GridCell.Tab.2.left" timestamp="1604731103732">
+      <screen x="0" y="0" width="1280" height="854" />
+    </state>
+    <state width="1035" height="247" key="GridCell.Tab.2.left/0.0.1280.854@0.0.1280.854" timestamp="1604731103732" />
+    <state width="1086" height="294" key="GridCell.Tab.2.left/0.0.1340.894@0.0.1340.894" timestamp="1603630117855" />
+    <state width="1035" height="254" key="GridCell.Tab.2.left/0.23.1280.782@0.23.1280.782" timestamp="1604329340540" />
+    <state width="1035" height="247" key="GridCell.Tab.2.right" timestamp="1604731103733">
+      <screen x="0" y="0" width="1280" height="854" />
+    </state>
+    <state width="1035" height="247" key="GridCell.Tab.2.right/0.0.1280.854@0.0.1280.854" timestamp="1604731103733" />
+    <state width="1086" height="294" key="GridCell.Tab.2.right/0.0.1340.894@0.0.1340.894" timestamp="1603630117856" />
+    <state width="1035" height="254" key="GridCell.Tab.2.right/0.23.1280.782@0.23.1280.782" timestamp="1604329340542" />
+    <state x="299" y="67" key="NewModule_or_Project.wizard" timestamp="1603115071460">
+      <screen x="0" y="0" width="1340" height="894" />
+    </state>
+    <state x="299" y="67" key="NewModule_or_Project.wizard/0.0.1340.894@0.0.1340.894" timestamp="1603115071460" />
+    <state x="256" y="23" width="1024" height="821" key="SettingsEditor" timestamp="1604904378578">
+      <screen x="0" y="0" width="1280" height="854" />
+    </state>
+    <state x="256" y="23" key="SettingsEditor/0.0.1280.854@0.0.1280.854" timestamp="1604904378578" />
+    <state x="316" y="23" width="1024" height="821" key="SettingsEditor/0.0.1340.894@0.0.1340.894" timestamp="1603282219315" />
+    <state x="382" y="343" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1603281886006">
+      <screen x="0" y="0" width="1340" height="894" />
+    </state>
+    <state x="382" y="343" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1340.894@0.0.1340.894" timestamp="1603281886006" />
+    <state x="355" y="179" width="662" height="522" key="find.popup" timestamp="1604321953407">
+      <screen x="0" y="0" width="1280" height="854" />
+    </state>
+    <state x="355" y="179" width="662" height="522" key="find.popup/0.0.1280.854@0.0.1280.854" timestamp="1604321953407" />
+    <state x="372" y="187" width="662" height="546" key="find.popup/0.0.1340.894@0.0.1340.894" timestamp="1603376637032" />
+    <state x="117" y="52" width="1212" height="821" key="new project wizard" timestamp="1603112682097">
+      <screen x="0" y="0" width="1340" height="894" />
+    </state>
+    <state x="117" y="52" width="1212" height="821" key="new project wizard/0.0.1340.894@0.0.1340.894" timestamp="1603112682097" />
+    <state x="335" y="209" width="670" height="675" key="run.anything.popup" timestamp="1603198647785">
+      <screen x="0" y="0" width="1340" height="894" />
+    </state>
+    <state x="335" y="209" width="670" height="675" key="run.anything.popup/0.0.1340.894@0.0.1340.894" timestamp="1603198647785" />
+    <state x="305" y="178" width="670" height="676" key="search.everywhere.popup" timestamp="1604214298635">
+      <screen x="0" y="0" width="1280" height="854" />
+    </state>
+    <state x="305" y="178" width="670" height="676" key="search.everywhere.popup/0.0.1280.854@0.0.1280.854" timestamp="1604214298635" />
+  </component>
+</project>

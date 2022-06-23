@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="fun.mizhuo.hrserver.mapper.HrMapper">
+  <resultMap id="BaseResultMap" type="fun.mizhuo.hrserver.model.Hr">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="phone" jdbcType="CHAR" property="phone" />
+    <result column="telephone" jdbcType="VARCHAR" property="telephone" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="enabled" jdbcType="BIT" property="enabled" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="userface" jdbcType="VARCHAR" property="userFace" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+  </resultMap>
+
+  <resultMap id="HrWithRoleMap" type="fun.mizhuo.hrserver.model.Hr" extends="BaseResultMap">
+    <collection property="roles" ofType="fun.mizhuo.hrserver.model.Role">
+        <id column="rid" property="id"></id>
+        <result column="rname" property="name"></result>
+        <result column="rnameZh" property="nameZh"></result>
+    </collection>
+  </resultMap>
+
+    <select id="getAllHrsWithOutCurrentHr" parameterType="map" resultMap="HrWithRoleMap">
+       SELECT
+          a.id,
+          a.NAME,
+          a.phone,
+          a.telephone,
+          a.address,
+          a.enabled,
+          a.username,
+          a.userface,
+          a.remark,
+          c.id AS 'rid',
+          c.NAME AS 'rname',
+          c.nameZh AS 'rnameZh'
+      FROM
+          hr a
+      LEFT JOIN hr_role b ON a.id = b.hrid
+      LEFT JOIN role c ON b.rid = c.id
+      WHERE a.id &lt;&gt; #{id}
+      <if test="keyWord != null and keyWord != ''">
+          and (a.NAME like CONCAT('%', #{keyWord},'%') or a.username like CONCAT('%', #{keyWord},'%'))
+      </if>
+      ORDER by a.id
+    </select>
+
+    <update id="enabledHrById" parameterType="fun.mizhuo.hrserver.model.Hr">
+        update hr set enabled = #{enabled} where id = #{id}
+    </update>
+
+    <delete id="deleteHrById">
+        delete from hr where id = #{id}
+    </delete>
+
+</mapper>

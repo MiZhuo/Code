@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group 'fun.mizhuo'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile project(":hr-mapper")
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-amqp', version: '2.3.0.RELEASE'
+}

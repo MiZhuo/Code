@@ -1,0 +1,31 @@
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+server:
+  port: 8888
+spring:
+  application:
+    name: hrserver
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/hr?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: mizhuo
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+    password:
+    timeout: 3000  # 连接超时
+    jedis:
+      pool:
+        max-active: 100   # 最大连接数
+        max-wait: 30000   # 最大堵塞时间
+        min-idle: 0       # 最小空闲连接
+        max-idle: 20      # 最大空闲连接
+
+logging:
+  level:
+    fun.mizhuo.hrserver.mapper: DEBUG
+
+swagger:
+  enable: true

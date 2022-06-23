@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="fun.mizhuo.hrserver.mapper.EmployeeMapper">
+  <resultMap id="BaseResultMap" type="fun.mizhuo.hrserver.model.Employee">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="gender" jdbcType="CHAR" property="gender" />
+    <result column="birthday" jdbcType="DATE" property="birthday" />
+    <result column="idCard" jdbcType="CHAR" property="idCard" />
+    <result column="wedlock" jdbcType="CHAR" property="wedlock" />
+    <result column="nationId" jdbcType="INTEGER" property="nationId" />
+    <result column="nativePlace" jdbcType="VARCHAR" property="nativePlace" />
+    <result column="politicId" jdbcType="INTEGER" property="politicId" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="departmentId" jdbcType="INTEGER" property="departmentId" />
+    <result column="jobLevelId" jdbcType="INTEGER" property="jobLevelId" />
+    <result column="posId" jdbcType="INTEGER" property="posId" />
+    <result column="engageForm" jdbcType="VARCHAR" property="engageForm" />
+    <result column="tiptopDegree" jdbcType="CHAR" property="tipTopDegree" />
+    <result column="specialty" jdbcType="VARCHAR" property="specialty" />
+    <result column="school" jdbcType="VARCHAR" property="school" />
+    <result column="beginDate" jdbcType="DATE" property="beginDate" />
+    <result column="workState" jdbcType="CHAR" property="workState" />
+    <result column="workID" jdbcType="CHAR" property="workId" />
+    <result column="contractTerm" jdbcType="DOUBLE" property="contractTerm" />
+    <result column="conversionTime" jdbcType="DATE" property="conversionTime" />
+    <result column="notWorkDate" jdbcType="DATE" property="notworkDate" />
+    <result column="beginContract" jdbcType="DATE" property="beginContract" />
+    <result column="endContract" jdbcType="DATE" property="endContract" />
+    <result column="workAge" jdbcType="INTEGER" property="workAge" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, name, gender, birthday, idCard, wedlock, nationId, nativePlace, politicId, email, 
+    phone, address, departmentId, jobLevelId, posId, engageForm, tipTopDegree, specialty,
+    school, beginDate, workState, workId, contractTerm, conversionTime, notWorkDate,
+    beginContract, endContract, workAge
+  </sql>
+
+  <insert id="addEmployee" parameterType="fun.mizhuo.hrserver.model.Employee">
+    insert into employee values(
+        #{id}, #{name}, #{gender}, #{birthday}, #{idCard}, #{wedlock}, #{nationId}, #{nativePlace}, #{politicId}, #{email},
+        #{phone}, #{address}, #{departmentId}, #{jobLevelId}, #{posId}, #{engageForm}, #{tipTopDegree}, #{specialty},
+        #{school}, #{beginDate}, #{workState}, #{workId}, #{contractTerm}, #{conversionTime}, null,
+        #{beginContract}, #{endContract}, null
+    )
+  </insert>
+
+  <insert id="saveEmployees" parameterType="list">
+      insert into employee values
+      <foreach collection="list" close=";" item="employee" separator=",">
+         ( #{employee.id}, #{employee.name}, #{employee.gender}, #{employee.birthday}, #{employee.idCard}, #{employee.wedlock}, #{employee.nationId},
+          #{employee.nativePlace}, #{employee.politicId}, #{employee.email},#{employee.phone}, #{employee.address}, #{employee.departmentId},
+          #{employee.jobLevelId}, #{employee.posId}, #{employee.engageForm}, #{employee.tipTopDegree}, #{employee.specialty},
+          #{employee.school}, #{employee.beginDate}, #{employee.workState}, #{employee.workId}, #{employee.contractTerm}, #{employee.conversionTime}, null,
+          #{employee.beginContract}, #{employee.endContract}, null )
+      </foreach>
+  </insert>
+
+    <update id="updateEmployee" parameterType="fun.mizhuo.hrserver.model.Employee">
+        update employee
+        <set>
+          <if test="name != null">
+            name = #{name},
+          </if>
+          <if test="gender != null">
+            gender = #{gender},
+          </if>
+          <if test="birthday != null">
+            birthday = #{birthday},
+          </if>
+          <if test="idCard != null">
+            idCard = #{idCard},
+          </if>
+          <if test="wedlock != null">
+            wedlock = #{wedlock},
+          </if>
+          <if test="nationId != null">
+            nationId = #{nationId},
+          </if>
+          <if test="nativePlace != null">
+            nativePlace = #{nativePlace},
+          </if>
+          <if test="politicId != null">
+            politicId = #{politicId},
+          </if>
+          <if test="email != null">
+            email = #{email},
+          </if>
+          <if test="phone != null">
+            phone = #{phone},
+          </if>
+          <if test="address != null">
+            address = #{address},
+          </if>
+          <if test="departmentId != null">
+            departmentId = #{departmentId},
+          </if>
+          <if test="jobLevelId != null">
+            jobLevelId = #{jobLevelId},
+          </if>
+          <if test="posId != null">
+            posId = #{posId},
+          </if>
+          <if test="engageForm != null">
+            engageForm = #{engageForm},
+          </if>
+          <if test="tipTopDegree != null">
+            tipTopDegree = #{tipTopDegree},
+          </if>
+          <if test="specialty != null">
+            specialty = #{specialty},
+          </if>
+          <if test="school != null">
+            school = #{school},
+          </if>
+          <if test="beginDate != null">
+            beginDate = #{beginDate},
+          </if>
+          <if test="workState != null">
+            workState = #{workState},
+          </if>
+          <if test="contractTerm != null">
+            contractTerm = #{contractTerm},
+          </if>
+          <if test="conversionTime != null">
+            conversionTime = #{conversionTime},
+          </if>
+          <if test="beginContract != null">
+            beginContract = #{beginContract},
+          </if>
+          <if test="endContract != null">
+            endContract = #{endContract},
+          </if>
+        </set>
+        where id = #{id}
+  </update>
+
+  <delete id="deleteEmployee">
+    delete from employee where id = #{id}
+  </delete>
+
+  <delete id="deleteMore" parameterType="list">
+    delete from employee where id in (
+      <foreach collection="list" item="employee" separator=",">
+        #{employee.id}
+      </foreach>
+    )
+  </delete>
+
+  <select id="getAllEmp" resultMap="BaseResultMap">
+    select * from employee
+    <if test="keyWord != null and keyWord != ''">
+      where ( name like CONCAT('%', #{keyWord},'%') or workID like CONCAT('%', #{keyWord},'%') )
+    </if>
+  </select>
+
+  <select id="getNewWorkId" resultType="string">
+        select LPAD(max(workId)+1,8,0) from employee
+  </select>
+
+  <select id="checkEmployeeIsExist" resultType="_int" parameterType="fun.mizhuo.hrserver.model.Employee">
+    select count(1) from employee where id = #{id}
+  </select>
+
+  <select id="advSearch" resultType="fun.mizhuo.hrserver.model.Employee">
+    select * from employee
+    where 1=1
+    <if test="politicId != null and politicId != ''">
+        and politicId = #{politicId}
+    </if>
+    <if test="nationId != null and nationId != ''">
+      and nationId = #{nationId}
+    </if>
+    <if test="posId != null and posId != ''">
+      and posId = #{posId}
+    </if>
+    <if test="jobLevelId != null and jobLevelId != ''">
+      and jobLevelId = #{jobLevelId}
+    </if>
+    <if test="engageForm != null and engageForm != ''">
+      and engageForm = #{engageForm}
+    </if>
+    <if test="departmentId != null and departmentId != ''">
+      and departmentId = #{departmentId}
+    </if>
+    <if test="beginContract != null and beginContract != '' and endContract != null and endContract != ''">
+      and ((beginContract between #{beginContract} and #{endContract}) or (endContract between #{beginContract} and #{endContract}))
+    </if>
+  </select>
+
+</mapper>

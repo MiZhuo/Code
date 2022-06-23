@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="fun.mizhuo.hrserver.mapper.PositionMapper">
+  <resultMap id="BaseResultMap" type="fun.mizhuo.hrserver.model.Position">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="createDate" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="enabled" jdbcType="BIT" property="enabled" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, name, createDate, enabled
+  </sql>
+
+  <select id="getAllPosition" resultMap="BaseResultMap">
+        select * from position
+  </select>
+
+  <insert id="addPosition" parameterType="fun.mizhuo.hrserver.model.Position">
+    insert into position
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="name != null">
+        name,
+      </if>
+        createDate,
+        enabled,
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+        current_timestamp,
+        '1',
+    </trim>
+  </insert>
+
+  <delete id="deletePosition">
+       delete from position
+        where id = #{id,jdbcType=INTEGER}
+  </delete>
+
+  <delete id="deleteMorePosition" parameterType="list">
+        delete from position where id in
+        <foreach collection="list" item="position" open="(" close=")" separator=",">
+          #{position.id}
+        </foreach>
+  </delete>
+
+  <update id="updatePosition" parameterType="fun.mizhuo.hrserver.model.Position">
+    update position
+    <set>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        createDate = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="enabled != null">
+        enabled = #{enabled,jdbcType=BIT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+</mapper>

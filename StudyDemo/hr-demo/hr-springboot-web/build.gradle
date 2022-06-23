@@ -1,0 +1,13 @@
+allprojects {
+    apply plugin : 'java'
+    sourceCompatibility = '1.8'
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+
+    dependencies {
+    }
+
+}

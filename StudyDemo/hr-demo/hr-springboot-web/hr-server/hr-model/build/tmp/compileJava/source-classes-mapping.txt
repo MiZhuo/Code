@@ -1,0 +1,48 @@
+fun/mizhuo/hrserver/model/MenuRole.java
+ fun.mizhuo.hrserver.model.MenuRole
+fun/mizhuo/hrserver/model/JobLevel.java
+ fun.mizhuo.hrserver.model.JobLevel
+fun/mizhuo/hrserver/model/ChatMsg.java
+ fun.mizhuo.hrserver.model.ChatMsg
+fun/mizhuo/hrserver/model/EmployeeRemove.java
+ fun.mizhuo.hrserver.model.EmployeeRemove
+fun/mizhuo/hrserver/model/EmployeeEc.java
+ fun.mizhuo.hrserver.model.EmployeeEc
+fun/mizhuo/hrserver/model/EmployeeTrain.java
+ fun.mizhuo.hrserver.model.EmployeeTrain
+fun/mizhuo/hrserver/model/SysMsg.java
+ fun.mizhuo.hrserver.model.SysMsg
+fun/mizhuo/hrserver/model/EmpSalary.java
+ fun.mizhuo.hrserver.model.EmpSalary
+fun/mizhuo/hrserver/model/OpLog.java
+ fun.mizhuo.hrserver.model.OpLog
+fun/mizhuo/hrserver/model/Hr.java
+ fun.mizhuo.hrserver.model.Hr
+fun/mizhuo/hrserver/model/Employee.java
+ fun.mizhuo.hrserver.model.Employee
+fun/mizhuo/hrserver/model/Menu.java
+ fun.mizhuo.hrserver.model.Menu
+fun/mizhuo/hrserver/model/MailSendLog.java
+ fun.mizhuo.hrserver.model.MailSendLog
+fun/mizhuo/hrserver/model/HrRole.java
+ fun.mizhuo.hrserver.model.HrRole
+fun/mizhuo/hrserver/model/Nation.java
+ fun.mizhuo.hrserver.model.Nation
+fun/mizhuo/hrserver/model/Meta.java
+ fun.mizhuo.hrserver.model.Meta
+fun/mizhuo/hrserver/model/Salary.java
+ fun.mizhuo.hrserver.model.Salary
+fun/mizhuo/hrserver/model/Position.java
+ fun.mizhuo.hrserver.model.Position
+fun/mizhuo/hrserver/model/Appraise.java
+ fun.mizhuo.hrserver.model.Appraise
+fun/mizhuo/hrserver/model/Department.java
+ fun.mizhuo.hrserver.model.Department
+fun/mizhuo/hrserver/model/ResponseVo.java
+ fun.mizhuo.hrserver.model.ResponseVo
+fun/mizhuo/hrserver/model/AdjustSalary.java
+ fun.mizhuo.hrserver.model.AdjustSalary
+fun/mizhuo/hrserver/model/PoliticsStatus.java
+ fun.mizhuo.hrserver.model.PoliticsStatus
+fun/mizhuo/hrserver/model/Role.java
+ fun.mizhuo.hrserver.model.Role

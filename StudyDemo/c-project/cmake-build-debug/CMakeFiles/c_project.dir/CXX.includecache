@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/mizhuo/WorkPlace/c-project/com_example_demo_NativeTest.cpp
+iostream
+-
+com_example_demo_NativeTest.h
+/Users/mizhuo/WorkPlace/c-project/com_example_demo_NativeTest.h
+
+/Users/mizhuo/WorkPlace/c-project/com_example_demo_NativeTest.h
+jni.h
+/Users/mizhuo/WorkPlace/c-project/jni.h
+
+/Users/mizhuo/WorkPlace/c-project/jni.h
+stdio.h
+-
+stdarg.h
+-
+jni_md.h
+/Users/mizhuo/WorkPlace/c-project/jni_md.h
+
+/Users/mizhuo/WorkPlace/c-project/jni_md.h
+
