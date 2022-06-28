@@ -9,7 +9,8 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>hr-demo</module>
+        <module>gen-mybatis</module>
+        <module>InnerClass</module>
     </modules>
 
     <properties>

@@ -5,16 +5,52 @@
     <option name="USE_PROJECT_LEVEL_SETTINGS" value="false" />
     <list size="0" />
   </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/hr-server" />
+    <file type="web" url="file://$PROJECT_DIR$/hr-springboot-web" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/LeetCode/pom.xml" />
         <option value="$PROJECT_DIR$/StudyDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/SpikeSystem/pom.xml" />
+        <option value="$PROJECT_DIR$/SpikeSystem/gatewayServer/pom.xml" />
+        <option value="$PROJECT_DIR$/SpikeSystem/orderServer/pom.xml" />
+        <option value="$PROJECT_DIR$/SpikeSystem/registryServer/pom.xml" />
+        <option value="$PROJECT_DIR$/SpikeSystem/spikeClient/pom.xml" />
+        <option value="$PROJECT_DIR$/SpikeSystem/spikeConfig/pom.xml" />
+        <option value="$PROJECT_DIR$/SpikeSystem/stockServer/pom.xml" />
+        <option value="$PROJECT_DIR$/SpikeSystem/storageServer/pom.xml" />
+        <option value="$PROJECT_DIR$/SpikeSystem/timeServer/pom.xml" />
+        <option value="$PROJECT_DIR$/SpikeSystem/userServer/pom.xml" />
+        <option value="$PROJECT_DIR$/gen-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/StudyDemo/seata-demo-bank1/pom.xml" />
+        <option value="$PROJECT_DIR$/StudyDemo/seata-demo-bank2/pom.xml" />
+        <option value="$PROJECT_DIR$/StudyDemo/seata-demo-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/StudyDemo/spring-demo-1/pom.xml" />
+        <option value="$PROJECT_DIR$/StudyDemo/spring-demo-2/pom.xml" />
+        <option value="$PROJECT_DIR$/StudyDemo/spring-demo-3/pom.xml" />
+        <option value="$PROJECT_DIR$/StudyDemo/spring-demo-4/pom.xml" />
+        <option value="$PROJECT_DIR$/StudyDemo/Java8Demo/pom.xml" />
+        <option value="$PROJECT_DIR$/StudyDemo/NormalDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/StudyDemo/PatternDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/StudyDemo/commonBean/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/StudyDemo/gen-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/StudyDemo/hr-demo/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
   </component>
   <component name="SuppressionsComponent">
     <option name="suppComments" value="[]" />

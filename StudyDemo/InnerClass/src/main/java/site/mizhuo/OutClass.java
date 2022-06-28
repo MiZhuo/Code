@@ -1,7 +1,5 @@
 package site.mizhuo;
 
-import org.junit.Test;
-
 /**
  * @ClassName InnerClass
  * @Description:

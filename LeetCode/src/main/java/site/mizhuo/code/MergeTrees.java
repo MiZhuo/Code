@@ -1,5 +1,4 @@
 package site.mizhuo.code;
-import src.main.java.NecessaryClass.TreeNode;
 /**
  * @PackageName: LeetCode_2020_03
  * @ClassName: MergeTrees

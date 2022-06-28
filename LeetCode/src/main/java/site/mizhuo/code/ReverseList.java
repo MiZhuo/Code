@@ -1,6 +1,5 @@
 package site.mizhuo.code;
 
-import src.main.java.NecessaryClass.ListNode;
 
 /**
  * Create by wulibin on 2019/8/1
