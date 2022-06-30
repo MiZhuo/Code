@@ -1,0 +1,8 @@
+server:
+  port: 8888
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: mizhuo
+    password: mizhuo123
+    url: jdbc:mysql://192.168.3.73:3306/
