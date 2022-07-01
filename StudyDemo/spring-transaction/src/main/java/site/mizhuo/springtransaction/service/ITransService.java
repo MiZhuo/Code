@@ -9,4 +9,6 @@ package site.mizhuo.springtransaction.service;
  **/
 public interface ITransService {
     void trans(String from_id, String to_id, Double amt);
+
+    void deducFree(String from_id,Double amt);
 }

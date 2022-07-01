@@ -1,6 +1,5 @@
 package site.mizhuo.springframework;
 
-import org.junit.Test;
 import site.mizhuo.springframework.service.UserService_02;
 import site.mizhuo.springframework.service.UserService_01;
 
