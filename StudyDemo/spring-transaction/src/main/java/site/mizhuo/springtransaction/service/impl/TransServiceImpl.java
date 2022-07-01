@@ -36,7 +36,7 @@ public class TransServiceImpl implements ITransService {
 
     /***
      * @Author MiZhuo
-     * @Description //扣除手续费
+     * @Description 扣除手续费
      * @Date 12:55 上午 2022/7/2
      * @Param [from_id, amt]
      * @return void
