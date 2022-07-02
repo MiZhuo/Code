@@ -23,4 +23,10 @@ public class TransController {
         transService.trans(from_id,to_id,amt);
         return "success";
     }
+
+    @GetMapping("/free")
+    public String free(String from_id,Double amt){
+        transService.deducFree(from_id,amt);
+        return "success";
+    }
 }

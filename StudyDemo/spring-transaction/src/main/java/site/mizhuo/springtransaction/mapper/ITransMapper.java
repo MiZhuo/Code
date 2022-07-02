@@ -12,10 +12,11 @@ import org.apache.ibatis.annotations.Update;
  * @Version 1.0
  **/
 @Mapper
-public interface ITransDao {
+public interface ITransMapper {
     @Update("update transdemo set amt = amt + #{amt} where id = #{id}")
     void addMoney(String id,Double amt);
 
     @Update("update transdemo set amt = amt - #{amt} where id = #{id}")
     void decrMoney(String id,Double amt);
+
 }

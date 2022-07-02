@@ -2,8 +2,9 @@ package site.mizhuo.springtransaction.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
-import site.mizhuo.springtransaction.mapper.ITransDao;
+import site.mizhuo.springtransaction.mapper.ITransMapper;
 import site.mizhuo.springtransaction.service.ITransService;
 
 /**
@@ -16,7 +17,7 @@ import site.mizhuo.springtransaction.service.ITransService;
 @Service
 public class TransServiceImpl implements ITransService {
     @Autowired
-    private ITransDao transDao;
+    private ITransMapper transMapper;
 
     /***
      * @Author MiZhuo
@@ -25,13 +26,12 @@ public class TransServiceImpl implements ITransService {
      * @Param [from_id, to_id, amt]
      * @return void
      **/
-    @Transactional
+    @Transactional(propagation= Propagation.REQUIRED)
     @Override
     public void trans(String from_id, String to_id, Double amt) {
+        transMapper.decrMoney(from_id,amt);
+        transMapper.addMoney(to_id,amt);
         this.deducFree(from_id,amt);
-        transDao.decrMoney(from_id,amt);
-        int i = 1/0;
-        transDao.addMoney(to_id,amt);
     }
 
     /***
@@ -41,11 +41,12 @@ public class TransServiceImpl implements ITransService {
      * @Param [from_id, amt]
      * @return void
      **/
-    @Transactional
+    @Transactional(propagation= Propagation.REQUIRED)
     @Override
     public void deducFree(String from_id, Double amt) {
-        Double free = amt * 0.01;
-        transDao.decrMoney(from_id,free);
-        transDao.addMoney("3",free);
+        Double free = amt * 0.001;
+        transMapper.decrMoney(from_id,free);
+        int i = 1/0;
+        transMapper.addMoney("3",free);
     }
 }
