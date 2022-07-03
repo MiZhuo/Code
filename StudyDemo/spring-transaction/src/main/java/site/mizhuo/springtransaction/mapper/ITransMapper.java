@@ -5,8 +5,8 @@ import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
 /**
- * @InterfaceName ITransDao
- * @Description:
+ * @InterfaceName ITransMapper
+ * @Description: 定义一个扣减金额和一个增加金额的方法
  * @Author: MiZhuo
  * @Create: 2022-06-30 22:08
  * @Version 1.0
