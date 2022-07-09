@@ -63,7 +63,7 @@
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>DEBUG</level>
         </filter>
-        <destination>${LOG_STASH_HOST}:4560</destination>
+        <destination>${LOG_STASH_HOST}:6001</destination>
         <encoder charset="UTF-8" class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
             <providers>
                 <timestamp>
@@ -101,7 +101,7 @@
             <onMatch>ACCEPT</onMatch>
             <onMismatch>DENY</onMismatch>
         </filter>
-        <destination>${LOG_STASH_HOST}:4561</destination>
+        <destination>${LOG_STASH_HOST}:6002</destination>
         <encoder charset="UTF-8" class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
             <providers>
                 <timestamp>
@@ -119,69 +119,6 @@
                         "class": "%logger",
                         "message": "%message",
                         "stack_trace": "%exception{20}"
-                        }
-                    </pattern>
-                </pattern>
-            </providers>
-        </encoder>
-        <!--当有多个LogStash服务时，设置访问策略为轮询-->
-        <connectionStrategy>
-            <roundRobin>
-                <connectionTTL>5 minutes</connectionTTL>
-            </roundRobin>
-        </connectionStrategy>
-    </appender>
-
-    <!--业务日志输出到LogStash-->
-    <appender name="LOG_STASH_BUSINESS" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
-        <destination>${LOG_STASH_HOST}:4562</destination>
-        <encoder charset="UTF-8" class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
-            <providers>
-                <timestamp>
-                    <timeZone>Asia/Shanghai</timeZone>
-                </timestamp>
-                <!--自定义日志输出格式-->
-                <pattern>
-                    <pattern>
-                        {
-                        "project": "mizhuo-transaction",
-                        "level": "%level",
-                        "service": "${APP_NAME:-}",
-                        "pid": "${PID:-}",
-                        "thread": "%thread",
-                        "class": "%logger",
-                        "message": "%message",
-                        "stack_trace": "%exception{20}"
-                        }
-                    </pattern>
-                </pattern>
-            </providers>
-        </encoder>
-        <!--当有多个LogStash服务时，设置访问策略为轮询-->
-        <connectionStrategy>
-            <roundRobin>
-                <connectionTTL>5 minutes</connectionTTL>
-            </roundRobin>
-        </connectionStrategy>
-    </appender>
-
-    <!--接口访问记录日志输出到LogStash-->
-    <appender name="LOG_STASH_RECORD" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
-        <destination>${LOG_STASH_HOST}:4563</destination>
-        <encoder charset="UTF-8" class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
-            <providers>
-                <timestamp>
-                    <timeZone>Asia/Shanghai</timeZone>
-                </timestamp>
-                <!--自定义日志输出格式-->
-                <pattern>
-                    <pattern>
-                        {
-                        "project": "mizhuo-transaction",
-                        "level": "%level",
-                        "service": "${APP_NAME:-}",
-                        "class": "%logger",
-                        "message": "%message"
                         }
                     </pattern>
                 </pattern>
@@ -200,7 +137,6 @@
     <logger name="springfox" level="INFO"/>
     <logger name="io.swagger" level="INFO"/>
     <logger name="org.springframework" level="INFO"/>
-    <logger name="org.hibernate.validator" level="INFO"/>
 
     <root level="DEBUG">
         <appender-ref ref="CONSOLE"/>
@@ -210,11 +146,11 @@
         <appender-ref ref="LOG_STASH_ERROR"/>
     </root>
 
-    <logger name="site.mizhuo.springtransaction" level="ERROR">
-        <appender-ref ref="LOG_STASH_ERROR"/>
+    <logger name="site.mizhuo.springtransaction" level="DEBUG">
+        <appender-ref ref="LOG_STASH_DEBUG"/>
     </logger>
 
-    <logger name="site.mizhuo.springtransaction" level="DEBUG">
-        <appender-ref ref="LOG_STASH_BUSINESS"/>
+    <logger name="site.mizhuo.springtransaction" level="ERROR">
+        <appender-ref ref="LOG_STASH_ERROR"/>
     </logger>
 </configuration>

@@ -1,15 +1,14 @@
 server:
   port: 8888
 spring:
-  application:
-    name: transcaction
+  application: transaction
   datasource:
-  driver-class-name: com.mysql.cj.jdbc.Driver
-  username: root
-  password: mizhuo123
-  url: jdbc:mysql://192.168.3.73:3306/demo
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: mizhuo123
+    url: jdbc:mysql://192.168.3.73:3306/demo
 mybatis-plus:
   configuration:
-  log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
 logstash:
-  host: localhost
+  host: 192.168.204.128

@@ -15,7 +15,7 @@
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>DEBUG</level>
         </filter>
-        <destination>${LOG_STASH_HOST}:4560</destination>
+        <destination>${LOG_STASH_HOST}:6001</destination>
         <encoder charset="UTF-8" class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
             <providers>
                 <timestamp>
@@ -53,7 +53,7 @@
             <onMatch>ACCEPT</onMatch>
             <onMismatch>DENY</onMismatch>
         </filter>
-        <destination>${LOG_STASH_HOST}:4561</destination>
+        <destination>${LOG_STASH_HOST}:6002</destination>
         <encoder charset="UTF-8" class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
             <providers>
                 <timestamp>
@@ -85,8 +85,8 @@
     </appender>
 
     <!--控制框架输出日志-->
-    <logger name="org.slf4j" level="INFO"/>
-    <logger name="org.springframework" level="INFO"/>
+    <logger name="org.slf4j" level="DEBUG"/>
+    <logger name="org.springframework" level="DEBUG"/>
 
     <root level="DEBUG">
         <appender-ref ref="CONSOLE"/>
@@ -94,11 +94,11 @@
         <appender-ref ref="LOG_STASH_ERROR"/>
     </root>
 
-    <logger name="site.mizhuo.springtransaction" level="ERROR">
-        <appender-ref ref="LOG_STASH_ERROR"/>
-    </logger>
-
     <logger name="site.mizhuo.springtransaction" level="DEBUG">
         <appender-ref ref="LOG_STASH_DEBUG"/>
+    </logger>
+
+    <logger name="site.mizhuo.springtransaction" level="ERROR">
+        <appender-ref ref="LOG_STASH_ERROR"/>
     </logger>
 </configuration>
