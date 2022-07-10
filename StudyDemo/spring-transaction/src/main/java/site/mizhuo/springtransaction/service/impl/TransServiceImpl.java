@@ -44,6 +44,6 @@ public class TransServiceImpl implements ITransService {
         Double free = amt * 0.001;
         transMapper.decrMoney(from_id,free);
         transMapper.addMoney("3",free);
-        int i = 1/0;
+//        int i = 1/0;
     }
 }

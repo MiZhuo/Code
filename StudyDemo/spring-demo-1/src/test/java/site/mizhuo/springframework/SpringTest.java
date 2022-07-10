@@ -12,7 +12,6 @@ import site.mizhuo.springframework.service.UserService_01;
  **/
 public class SpringTest {
 
-    @Test
     public void test(){
         // 初始化工厂
         BeanFactory factory = new BeanFactory();

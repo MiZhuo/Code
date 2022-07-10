@@ -12,3 +12,12 @@ mybatis-plus:
     log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
 logstash:
   host: 192.168.204.128
+logging:
+  level:
+    com:
+      baomidou:
+        mybatisplus: DEBUG
+    site:
+      mizhuo:
+        springtransaction:
+          mapper: DEBUG
